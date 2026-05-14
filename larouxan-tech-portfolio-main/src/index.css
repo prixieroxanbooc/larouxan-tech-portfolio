@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* LarouxanTech Design System */
+
+@layer base {
+  :root {
+    --background: 60 4% 95%;
+    --foreground: 24 9% 10%;
+
+    --card: 60 9% 97%;
+    --card-foreground: 24 9% 10%;
+
+    --popover: 20 5% 90%;
+    --popover-foreground: 24 9% 10%;
+
+    --primary: 37 92% 50%;
+    --primary-foreground: 47 100% 96%;
+
+    --secondary: 24 5% 44%;
+    --secondary-foreground: 60 9% 97%;
+
+    --muted: 23 5% 82%;
+    --muted-foreground: 24 9% 10%;
+
+    --accent: 47 100% 96%;
+    --accent-foreground: 37 92% 50%;
+
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 85% 97%;
+
+    --border: 23 5% 82%;
+    --input: 23 5% 82%;
+    --ring: 37 92% 50%;
+
+    --radius: 1rem;
+
+    --chart-1: 45 96% 64%;
+
+    --chart-2: 47 95% 53%;
+
+    --chart-3: 43 96% 56%;
+
+    --chart-4: 37 92% 50%;
+
+    --chart-5: 24 5% 44%;
+
+    --sidebar: 60 9% 97%;
+
+    --sidebar-foreground: 24 9% 10%;
+
+    --sidebar-primary: 37 92% 50%;
+
+    --sidebar-primary-foreground: 47 100% 96%;
+
+    --sidebar-accent: 24 5% 44%;
+
+    --sidebar-accent-foreground: 60 9% 97%;
+
+    --sidebar-border: 23 5% 82%;
+
+    --sidebar-ring: 37 92% 50%;
+
+    --font-sans: 'Source Sans Pro', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+
+    --font-serif: 'Source Serif Pro', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+
+    --font-mono: 'Source Code Pro', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+
+    --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+
+    --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+
+    --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+
+    --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+
+    --shadow-md: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.1);
+
+    --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 4px 6px -1px hsl(0 0% 0% / 0.1);
+
+    --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 8px 10px -1px hsl(0 0% 0% / 0.1);
+
+    --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
+
+    --tracking-normal: 0em;
+
+    --spacing: 0.25rem;
+  }
+  .dark {
+    --background: 24 9% 10%;
+    --foreground: 60 9% 97%;
+    --card: 12 6% 15%;
+    --card-foreground: 60 9% 97%;
+    --popover: 30 6% 25%;
+    --popover-foreground: 60 9% 97%;
+    --primary: 43 96% 56%;
+    --primary-foreground: 20 91% 14%;
+    --secondary: 24 5% 44%;
+    --secondary-foreground: 60 9% 97%;
+    --muted: 24 5% 44%;
+    --muted-foreground: 60 9% 97%;
+    --accent: 25 83% 14%;
+    --accent-foreground: 47 95% 53%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 85% 97%;
+    --border: 33 5% 32%;
+    --input: 33 5% 32%;
+    --ring: 43 96% 56%;
+    --chart-1: 45 96% 64%;
+    --chart-2: 48 96% 76%;
+    --chart-3: 43 96% 56%;
+    --chart-4: 37 92% 50%;
+    --chart-5: 33 5% 32%;
+    --sidebar: 12 6% 15%;
+    --sidebar-foreground: 60 9% 97%;
+    --sidebar-primary: 43 96% 56%;
+    --sidebar-primary-foreground: 20 91% 14%;
+    --sidebar-accent: 47 95% 53%;
+    --sidebar-accent-foreground: 25 83% 14%;
+    --sidebar-border: 33 5% 32%;
+    --sidebar-ring: 43 96% 56%;
+    --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+    --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+    --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow-md: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.1);
+    --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 4px 6px -1px hsl(0 0% 0% / 0.1);
+    --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 8px 10px -1px hsl(0 0% 0% / 0.1);
+    --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer components {
+  .gradient-bg {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
+  }
+
+  .tech-glow {
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+  }
+
+  .hover-lift {
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
+    position: relative;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-6px);
+    box-shadow:
+      0 20px 40px -10px hsl(var(--primary) / 0.25),
+      0 0 0 1px hsl(var(--primary) / 0.15);
+  }
+
+  /* Animated mesh-gradient background for hero — uses brand colors */
+  .mesh-bg {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+  }
+
+  .mesh-bg::before {
+    content: '';
+    position: absolute;
+    inset: -20%;
+    z-index: -1;
+    background:
+      radial-gradient(at 20% 20%, hsl(var(--primary) / 0.18) 0px, transparent 50%),
+      radial-gradient(at 80% 30%, hsl(var(--accent-foreground) / 0.15) 0px, transparent 50%),
+      radial-gradient(at 70% 80%, hsl(var(--secondary) / 0.12) 0px, transparent 50%),
+      radial-gradient(at 30% 70%, hsl(var(--chart-1) / 0.15) 0px, transparent 50%);
+    filter: blur(40px);
+    animation: mesh-shift 18s ease-in-out infinite alternate;
+  }
+
+  @keyframes mesh-shift {
+    0%   { transform: translate(0, 0) scale(1); }
+    50%  { transform: translate(2%, -3%) scale(1.05); }
+    100% { transform: translate(-2%, 2%) scale(0.98); }
+  }
+
+  /* Gradient border that glows on hover — apply to .gradient-border-card */
+  .gradient-border-card {
+    position: relative;
+    background: hsl(var(--card));
+    border-radius: var(--radius);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .gradient-border-card::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, hsl(var(--primary) / 0.4), hsl(var(--secondary) / 0.4), hsl(var(--primary) / 0.4));
+    background-size: 200% 200%;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease, background-position 0.6s ease;
+    pointer-events: none;
+  }
+
+  .gradient-border-card:hover::before {
+    opacity: 1;
+    background-position: 100% 100%;
+  }
+
+  /* Button shine effect on hover */
+  .btn-shine {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-shine::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      hsl(0 0% 100% / 0.25) 50%,
+      transparent 100%
+    );
+    transition: left 0.6s ease;
+    pointer-events: none;
+  }
+
+  .btn-shine:hover::after {
+    left: 100%;
+  }
+
+  /* Tag/badge pill that lifts subtly on hover */
+  .tag-pill {
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .tag-pill:hover {
+    transform: translateY(-1px);
+  }
+
+  /* Smooth scroll for the whole page */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Hide native cursor when CustomCursor is mounted (desktop only).
+     Applied via JS on .cursor-none on <html>. Excludes text inputs so
+     users keep the I-beam where it matters for typing. */
+  html.cursor-none,
+  html.cursor-none *:not(input):not(textarea):not([contenteditable="true"]) {
+    cursor: none !important;
+  }
+}
