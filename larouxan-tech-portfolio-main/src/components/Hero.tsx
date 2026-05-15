@@ -42,7 +42,7 @@ const Hero = () => {
                   src="https://drive.google.com/file/d/1MKTnwQ3F_EW51ucOPg2VbB-jctsaXdJG/preview"
                   className="w-full h-full"
                   title="LarouxanTech Introduction Video"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allow="autoplay; encrypted-media"
                   allowFullScreen
                 />
               </div>
