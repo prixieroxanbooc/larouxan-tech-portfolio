@@ -39,10 +39,10 @@ const Hero = () => {
             <div className="relative bg-card rounded-2xl p-6 shadow-xl hover-lift">
               <div className="aspect-video rounded-xl overflow-hidden bg-muted">
                 <iframe
-                  src="https://drive.google.com/file/d/1MKTnwQ3F_EW51ucOPg2VbB-jctsaXdJG/preview"
+                  src="https://www.youtube.com/embed/miSp7bB1XmE"
                   className="w-full h-full"
                   title="LarouxanTech Introduction Video"
-                  allow="autoplay; encrypted-media"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
                 />
               </div>
