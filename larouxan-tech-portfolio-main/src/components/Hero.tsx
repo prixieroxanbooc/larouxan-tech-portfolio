@@ -37,7 +37,7 @@ const Hero = () => {
 
           <div className="animate-slide-in-right space-y-6">
             <div className="relative bg-card rounded-2xl p-6 shadow-xl hover-lift">
-              <div className="aspect-video rounded-xl overflow-hidden bg-muted">
+              <div className="mx-auto w-full max-w-[300px] aspect-[9/16] rounded-xl overflow-hidden bg-muted">
                 <iframe
                   src="https://www.youtube.com/embed/miSp7bB1XmE"
                   className="w-full h-full"
