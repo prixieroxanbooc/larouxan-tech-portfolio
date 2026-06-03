@@ -35,6 +35,7 @@ import {
   BarChart3,
   ShieldCheck,
   Boxes,
+  MessageSquare,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
@@ -255,13 +256,13 @@ const projects: Project[] = [
     tags: ["Node.js", "Google Cloud Run", "MCP", "OAuth 2.0", "Firestore"],
   },
   {
-    icon: Boxes,
-    title: "Platform MCP Wrapper & Chat Client",
-    shortDescription: "100+ platform capabilities exposed as MCP tools + chat client",
+    icon: MessageSquare,
+    title: "MCP Chat Client",
+    shortDescription: "Chat client that calls MCP tools mid-conversation",
     longDescription:
-      "An MCP wrapper exposing 100+ capabilities of a self-hosted AI platform as callable tools (built with FastMCP), plus a lightweight FastAPI chat client that connects to MCP servers over streamable HTTP / JSON-RPC. Containerized and deployed on Google Cloud Run.",
-    liveUrl: "https://prixieroxanbooc.github.io/portfolio/demo-mcp.html",
-    tags: ["Python", "FastMCP", "FastAPI", "JSON-RPC", "Google Cloud Run"],
+      "A lightweight chat client (FastAPI + an LLM) that connects to Model Context Protocol servers over streamable HTTP / JSON-RPC, letting the assistant call real tools — Gmail, Sheets, Docs, Slides — during a conversation. It is backed by an MCP wrapper exposing 100+ platform capabilities as callable tools. The live demo runs a real LLM (bring your own key, capped) or simulated replies, with destructive tools blocked by a safe-defaults policy. Deployed on Google Cloud Run.",
+    liveUrl: "https://prixieroxanbooc.github.io/portfolio/demo-chat-client.html",
+    tags: ["Python", "FastAPI", "LLM", "MCP", "JSON-RPC", "Google Cloud Run"],
   },
 ];
 
