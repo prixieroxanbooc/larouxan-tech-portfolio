@@ -36,6 +36,7 @@ import {
   ShieldCheck,
   Boxes,
   MessageSquare,
+  LayoutDashboard,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
@@ -52,6 +53,16 @@ type Project = {
 };
 
 const projects: Project[] = [
+  {
+    icon: LayoutDashboard,
+    title: "FlowDesk AI — Productivity Workspace",
+    shortDescription: "Full-stack AI workspace for tasks, meetings, workflows & debugging",
+    longDescription:
+      "A full-stack AI productivity platform built with Next.js 14, TypeScript, and Tailwind CSS. Features a task manager with a kanban pipeline (proposed → approved → in progress → review → done), AI meeting capture that extracts summaries and action items into linked tasks, an automation workflow generator, an AI-powered debug console, and live project & people rollups — backed by the Google Gemini API over a file-based JSON store.",
+    githubUrl: "https://github.com/prixieroxanbooc/flowdesk-ai",
+    liveUrl: "https://flowdesk-ai.vercel.app",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Google Gemini", "Full-Stack", "AI"],
+  },
   {
     icon: Mail,
     title: "Gmail MCP Server",
