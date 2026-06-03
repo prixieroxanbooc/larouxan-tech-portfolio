@@ -30,6 +30,11 @@ import {
   AppWindow,
   Search,
   Images,
+  FileSignature,
+  Database,
+  BarChart3,
+  ShieldCheck,
+  Boxes,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
@@ -212,6 +217,51 @@ const projects: Project[] = [
     longDescription:
       "Enterprise knowledge agents built on Onyx (formerly Danswer) — semantic search and RAG-powered Q&A grounded in internal documents, operational data, and Postgres-backed financial datasets. Used to power AI assistants for banking ops teams.",
     tags: ["Onyx", "Danswer", "Enterprise Search", "RAG", "PostgreSQL"],
+  },
+  {
+    icon: FileSignature,
+    title: "Loan Document Generator Service",
+    shortDescription: "Microservice that fills DOCX loan templates from JSON",
+    longDescription:
+      "A serverless REST microservice that generates loan document bundles by filling Word (DOCX) templates from a structured JSON payload — two bundles, 54 fields total. Built as a pure templater (no financial computation) to keep legal/finance review in control, and deployed on Google Cloud Run. The live demo builds the request and a rendered document preview in the browser using sample data.",
+    liveUrl: "https://prixieroxanbooc.github.io/portfolio/demo-loan-docs.html",
+    tags: ["Node.js", "Express", "Google Cloud Run", "docxtemplater", "REST API"],
+  },
+  {
+    icon: Database,
+    title: "Large-Spreadsheet Filter & Billing Console",
+    shortDescription: "Server-side filtering of 290k+ row exports + billing PDF",
+    longDescription:
+      "A Cloud Run service that streams and filters 290,000+ row spreadsheet exports server-side — raw rows never reach the browser — then generates a deterministic monthly billing report and invoice PDF. Solved a scaling failure where an earlier approach overflowed on large files. Live demo simulates the preview-count → generate flow with fabricated sample data.",
+    liveUrl: "https://prixieroxanbooc.github.io/portfolio/demo-spreadsheet-filter.html",
+    tags: ["Node.js", "Express", "Google Cloud Run", "Google Sheets API", "Drive API"],
+  },
+  {
+    icon: BarChart3,
+    title: "AI Usage Analytics Dashboard",
+    shortDescription: "Adoption & governance dashboard for an internal AI platform",
+    longDescription:
+      "An analytics dashboard giving leadership visibility into adoption of an internal AI platform: active users, growth trends, and breakdowns by role and team. Secured behind an identity-aware proxy (org-domain only), with Firestore-backed role-based access (super-admin / member) and a full audit trail on every view and admin action. Deployed on Google Cloud Run.",
+    liveUrl: "https://prixieroxanbooc.github.io/portfolio/demo-dashboard.html",
+    tags: ["Express", "Google Cloud Run", "Firestore", "IAP", "RBAC", "Audit Log"],
+  },
+  {
+    icon: ShieldCheck,
+    title: "MCP Gateway & Tool Governance",
+    shortDescription: "Per-user identity routing & safety controls for MCP servers",
+    longDescription:
+      "A gateway fronting a fleet of MCP servers: it maps each profile to a user identity and injects it upstream, enforcing per-user OAuth so the assistant always acts as the right person. Adds an admin panel with per-profile tool allow/deny lists, live tool discovery, and destructive tools disabled by default. Deployed on Google Cloud Run.",
+    liveUrl: "https://prixieroxanbooc.github.io/portfolio/demo-mcp.html",
+    tags: ["Node.js", "Google Cloud Run", "MCP", "OAuth 2.0", "Firestore"],
+  },
+  {
+    icon: Boxes,
+    title: "Platform MCP Wrapper & Chat Client",
+    shortDescription: "100+ platform capabilities exposed as MCP tools + chat client",
+    longDescription:
+      "An MCP wrapper exposing 100+ capabilities of a self-hosted AI platform as callable tools (built with FastMCP), plus a lightweight FastAPI chat client that connects to MCP servers over streamable HTTP / JSON-RPC. Containerized and deployed on Google Cloud Run.",
+    liveUrl: "https://prixieroxanbooc.github.io/portfolio/demo-mcp.html",
+    tags: ["Python", "FastMCP", "FastAPI", "JSON-RPC", "Google Cloud Run"],
   },
 ];
 
