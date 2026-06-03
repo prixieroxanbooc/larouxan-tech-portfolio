@@ -36,5 +36,51 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- ===== Floating FAQ chatbot (static, no LLM) ===== -->
+    <script>
+      window.NovaFAQ = {
+        brand: "LarouxanTech",
+        tagline: "Automation Solutions",
+        accent: "#F59E0B",
+        logo: "/favicon.svg",
+        greeting: "Hi! 👋 I'm the LarouxanTech assistant. Ask about services, projects, the stack, or how to get started.",
+        categories: [
+          { name: "About", items: [
+            { q: "What is LarouxanTech?", a: "LarouxanTech is an automation & AI integration studio founded by Prixie Roxan. We build AI agents, MCP servers, and automation workflows that save businesses 20+ hours a week." },
+            { q: "Who is Prixie Roxan?", a: "Prixie Roxan (Prexel Roxan Macalaguim) is the founder — a Tech VA & Automation Engineer specializing in AI, MCP, CRM, and workflow automation." },
+            { q: "Why choose LarouxanTech?", a: "• 50+ successful projects\n• AI-first approach: MCP servers, RAG chatbots, custom agents\n• Self-hosted & serverless deployment expertise\n• Personalized solutions for your business\n• Ongoing support and optimization" },
+            { q: "Where are you based?", a: "Philippines-based, working with clients globally." }
+          ]},
+          { name: "Services", items: [
+            { q: "What services do you offer?", a: "• MCP server development\n• AI voice & chat agents\n• Workflow automation (n8n, Make.com, Zapier)\n• CRM setup & automation (GoHighLevel, HubSpot)\n• AI video generation pipelines\n• Custom internal dashboards & trackers\n• SOP & business process setup" },
+            { q: "Do you build MCP servers?", a: "Yes — custom Model Context Protocol servers that connect AI assistants like Claude to your tools (Gmail, Docs, Sheets, HubSpot, Slides), containerized and deployed serverlessly on Google Cloud Run." },
+            { q: "Do you build AI agents or chatbots?", a: "Yes — custom AI voice and chat agents (Retell, Vapi, ChatGPT) that handle inquiries, bookings, and support 24/7." },
+            { q: "Can you automate my CRM?", a: "Yes — GoHighLevel and HubSpot setup, pipelines, lifecycle workflows, and integrations." },
+            { q: "Do you do AI video pipelines?", a: "Yes — automated content-to-video pipelines using Heygen and Json2Video, with scheduled daily runs, orchestrated via n8n." }
+          ]},
+          { name: "Stack & Skills", items: [
+            { q: "What's your tech stack?", a: "MCP, ChatGPT/OpenAI, Microsoft Copilot Studio, Onyx, RAG/vector stores, Google Cloud Run, Docker, serverless architecture, n8n, Google Workspace APIs, and Google Apps Script." },
+            { q: "Which APIs have you integrated?", a: "Gmail, Google Docs, Sheets, and Slides APIs, HubSpot, plus various CRM and automation platforms." },
+            { q: "Self-hosted or serverless?", a: "Your choice — both are supported. Most services deploy serverlessly on Google Cloud Run (scale-to-zero, pay-per-use)." }
+          ]},
+          { name: "Projects", items: [
+            { q: "What have you built?", a: "MCP servers (Gmail, Docs, Sheets, Slides, HubSpot), n8n workflows with RAG chatbots, AI video pipelines, Appsmith internal apps, Asana automations, GHL/CRM builds, plus cloud services: a loan document generator, a billing console, an AI usage dashboard, an MCP gateway, and an MCP chat client." },
+            { q: "Can I see live demos?", a: "Yes — check the Projects section on this site. Several projects have live, interactive demos you can try in your browser." }
+          ]},
+          { name: "Getting Started", items: [
+            { q: "How do we start?", a: "Book a free consultation. We'll design a custom MCP server or workflow tailored to your stack and deploy it in days, not weeks." },
+            { q: "How long does it take?", a: "AI agents and automations are typically deployed in days, not weeks." },
+            { q: "What does it cost?", a: "Free consultation with no upfront costs or commitments. Each project is quoted based on scope." }
+          ]},
+          { name: "Contact", items: [
+            { q: "How do I contact you?", a: "• Book a call: https://calendly.com/prixieroxanbooc/30min\n• Email: prixieroxanbooc@gmail.com\n• WhatsApp: https://wa.me/639678968426\n• LinkedIn: https://www.linkedin.com/in/prexel-roxan-macalaguim-7314b221b/" },
+            { q: "How do I book a consultation?", a: "Book a free 30-minute call here: https://calendly.com/prixieroxanbooc/30min" }
+          ]}
+        ]
+      };
+    </script>
+    <script src="/faq-widget.js" defer></script>
+    <!-- ===== end FAQ chatbot ===== -->
   </body>
 </html>

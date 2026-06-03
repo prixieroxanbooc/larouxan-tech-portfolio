@@ -37,6 +37,7 @@ import {
   Boxes,
   MessageSquare,
   LayoutDashboard,
+  MessagesSquare,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
@@ -274,6 +275,15 @@ const projects: Project[] = [
       "A lightweight chat client (FastAPI + an LLM) that connects to Model Context Protocol servers over streamable HTTP / JSON-RPC, letting the assistant call real tools — Gmail, Sheets, Docs, Slides — during a conversation. It is backed by an MCP wrapper exposing 100+ platform capabilities as callable tools. The live demo runs a real LLM (bring your own key, capped) or simulated replies, with destructive tools blocked by a safe-defaults policy. Deployed on Google Cloud Run.",
     liveUrl: "https://prixieroxanbooc.github.io/portfolio/demo-chat-client.html",
     tags: ["Python", "FastAPI", "LLM", "MCP", "JSON-RPC", "Google Cloud Run"],
+  },
+  {
+    icon: MessagesSquare,
+    title: "Embeddable FAQ Chatbot Widget",
+    shortDescription: "Drop-in floating help widget — static, button-driven, no LLM",
+    longDescription:
+      "A self-contained floating FAQ chatbot any site can embed with one script tag. Static and button-driven (no AI, no API keys, no backend), it renders inside a Shadow DOM so it never clashes with the host page's CSS. Includes a no-code builder to set your brand, import a logo, pick a color, and paste your own knowledge base, then copy a ready-to-paste embed snippet.",
+    liveUrl: "https://prixieroxanbooc.github.io/portfolio/faq-builder.html",
+    tags: ["JavaScript", "Web Component", "Shadow DOM", "Embeddable", "No-Code"],
   },
 ];
 
