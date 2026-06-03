@@ -55,13 +55,13 @@ type Project = {
 const projects: Project[] = [
   {
     icon: LayoutDashboard,
-    title: "FlowDesk AI — Productivity Workspace",
-    shortDescription: "Full-stack AI workspace for tasks, meetings, workflows & debugging",
+    title: "NovaBank Workspace — Banking Ops Console",
+    shortDescription: "Internal AI workspace for a digital bank — tasks, meetings, workflows & debugging",
     longDescription:
-      "A full-stack AI productivity platform built with Next.js 14, TypeScript, and Tailwind CSS. Features a task manager with a kanban pipeline (proposed → approved → in progress → review → done), AI meeting capture that extracts summaries and action items into linked tasks, an automation workflow generator, an AI-powered debug console, and live project & people rollups — backed by the Google Gemini API over a file-based JSON store.",
-    githubUrl: "https://github.com/prixieroxanbooc/flowdesk-ai",
-    liveUrl: "https://flowdesk-ai.vercel.app",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Google Gemini", "Full-Stack", "AI"],
+      "An internal operations console for NovaBank, a fictional modern digital bank. Built with Next.js 14, TypeScript, and Tailwind CSS: a task manager with a kanban pipeline, AI meeting capture that turns transcripts into linked action-item tasks, an automation workflow generator, an AI-powered debug console, and live project & people rollups across NovaBank initiatives (Nova Everyday, Nova Business, Nova Flex Loan) — powered by the Google Gemini API.",
+    githubUrl: "https://github.com/prixieroxanbooc/novabank-workspace",
+    liveUrl: "https://novabank-workspace.vercel.app",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Google Gemini", "Fintech", "Full-Stack", "AI"],
   },
   {
     icon: Mail,
