@@ -36,7 +36,7 @@ const Hero = () => {
           </div>
 
           <div className="animate-slide-in-right space-y-6">
-            <div className="relative bg-card rounded-2xl p-6 shadow-xl hover-lift">
+            <div className="relative bg-card rounded-2xl p-2 shadow-xl hover-lift mx-auto w-fit max-w-[320px]">
               <div className="mx-auto w-full max-w-[300px] aspect-[9/16] rounded-xl overflow-hidden bg-muted">
                 <iframe
                   src="https://www.youtube.com/embed/miSp7bB1XmE"
@@ -46,8 +46,8 @@ const Hero = () => {
                   allowFullScreen
                 />
               </div>
-              <div className="mt-4 text-center">
-                <p className="text-sm text-muted-foreground">Learn how LarouxanTech can transform your business</p>
+              <div className="mt-2 px-1 pb-1 text-center">
+                <p className="text-xs text-muted-foreground">Learn how LarouxanTech can transform your business</p>
               </div>
             </div>
 
