@@ -57,6 +57,16 @@ type Project = {
 
 const projects: Project[] = [
   {
+    icon: Presentation,
+    title: "AI Automation Portfolio Deck",
+    shortDescription: "Downloadable presentation deck for LarouxanTech services and case studies",
+    longDescription:
+      "A presentation deck that gives prospects a quick overview of LarouxanTech's AI automation services, workflows, implementation capabilities, and portfolio highlights in a format that's easy to review and share.",
+    presentationUrl: "/portfolio-files/AI_Automation_Portfolio_Prixie%20(1).pptx",
+    presentationLabel: "View Deck",
+    tags: ["PowerPoint", "Portfolio", "AI Automation", "Sales Enablement"],
+  },
+  {
     icon: LayoutDashboard,
     title: "NovaBank Workspace — Banking Ops Console",
     shortDescription: "Internal AI workspace for a digital bank — tasks, meetings, workflows & debugging",
