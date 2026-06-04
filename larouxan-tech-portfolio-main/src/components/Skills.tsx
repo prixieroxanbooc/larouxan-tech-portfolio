@@ -20,6 +20,9 @@ const skillCategories: SkillCategory[] = [
       "Closebot",
       "Onyx (formerly Danswer)",
       "RAG / Vector Stores",
+      "FastMCP",
+      "JSON-RPC / Streamable HTTP",
+      "AI Chat Clients (FastAPI)",
     ],
   },
   {
@@ -31,7 +34,10 @@ const skillCategories: SkillCategory[] = [
       "Supabase",
       "PostgreSQL",
       "Node.js",
+      "Express.js",
       "TypeScript",
+      "Git / GitHub",
+      "GitHub Pages",
     ],
   },
   {
@@ -50,6 +56,9 @@ const skillCategories: SkillCategory[] = [
     skills: [
       "Google Workspace APIs",
       "Google Apps Script",
+      "Apps Script Web Apps",
+      "Google Sheets (as backend)",
+      "Google Drive API",
       "AppSheet",
       "Notion",
     ],
@@ -72,6 +81,38 @@ const skillCategories: SkillCategory[] = [
       "Low-Code Development",
       "JavaScript",
       "Python",
+    ],
+  },
+  {
+    title: "Bots & Messaging",
+    skills: [
+      "Telegram Bot Development",
+      "grammY",
+      "Telegram Bot API",
+      "Chatbot Payment / Paywall Flows",
+      "Inline Keyboards & Callbacks",
+    ],
+  },
+  {
+    title: "Web & Frontend",
+    skills: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "HTML5 / CSS3",
+      "Web Components / Shadow DOM",
+      "Embeddable Widgets",
+      "Responsive UI",
+    ],
+  },
+  {
+    title: "Document & File Generation",
+    skills: [
+      "DOCX (docxtemplater)",
+      "PDF (jsPDF)",
+      "Excel / CSV (SheetJS)",
+      "Client-Side File Generation",
+      "Branded Templates / Design Systems",
     ],
   },
 ];
