@@ -48,6 +48,8 @@ type Project = {
   longDescription: string;
   githubUrl?: string;
   liveUrl?: string;
+  presentationUrl?: string;
+  presentationLabel?: string;
   tags: string[];
   driveAssetsUrl?: string;
   images?: string[];
@@ -328,6 +330,14 @@ const ProjectCard = ({ project }: { project: Project }) => {
                 <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="w-4 h-4 mr-2" />
                   Live
+                </a>
+              </Button>
+            )}
+            {project.presentationUrl && (
+              <Button size="sm" variant="outline" asChild className="border-primary text-primary hover:bg-primary hover:text-white">
+                <a href={project.presentationUrl} target="_blank" rel="noopener noreferrer">
+                  <Presentation className="w-4 h-4 mr-2" />
+                  {project.presentationLabel ?? 'PPTX'}
                 </a>
               </Button>
             )}
